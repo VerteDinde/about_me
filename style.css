@@ -1,7 +1,20 @@
 /* GENERAL */
 
+
 /* HEADERS */
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
 
 /* NAV */
 
-/*  */
+nav li {
+    color: purple;
+}
+
+/* BODY */
