@@ -15,15 +15,15 @@ nameOne.innerHTML = answerOne;
 
 if (answerOne === "yes" || answerOne === "y") {
   alert('You got it! My name is Keeley.');
-  console.log('yes');
+  console.log('Yes, correct answer.');
 
 } else if (answerOne === 'no' || answerOne === 'n') {
   alert('No, sorry, it is Keeley.');
-  console.log('no');
+  console.log('No, incorrect.');
 
 } else {
   alert('Are you confused? Yes or no, please.');
-  console.log('other');
+  console.log('Other');
 }
 
 // Question 2: Is my favorite breakfast food pancakes? No. id = foodTwo.
@@ -34,11 +34,11 @@ foodTwo.innerHTML = answerTwo;
 
 if (answerTwo === 'yes' || answerTwo === 'y') {
   alert('No, I actually love cereal. Pancakes are amazing, though.');
-  console.log('yes');
+  console.log('Yes, incorrect answer.');
 
 } else if (answerTwo === 'no' || answerTwo === 'n') {
   alert('Good guess, my favorite breakfast food is actually cereal.');
-  console.log('no');
+  console.log('No, correct answer.');
 
 } else {
   alert('Are you confused? Yes or no.');
@@ -53,11 +53,11 @@ pianoThree.innerHTML = answerThree;
 
 if (answerThree === 'yes' || answerThree === 'y') {
   alert('I can play the piano!');
-  console.log('yes');
+  console.log('Yes, correct answer.');
 
 } else if (answerThree === 'no' || answerThree === 'n') {
   alert('Nope, sorry, I actually can play the piano.');
-  console.log('no');
+  console.log('No, incorrect answer.');
 
 } else {
   alert("Are you confused? This is a yes or no, check your spelling.");
@@ -72,11 +72,11 @@ tallFour.innerHTML = answerFour;
 
 if (answerFour === 'yes' || answerFour === 'y') {
   alert('No, I\'m too short');
-  console.log('yes');
+  console.log('Yes, incorrect answer.');
 
 } else if (answerFour === 'no' || answerFour === 'n') {
   alert('I am not tall enough, it\'s true.');
-  console.log('no');
+  console.log('No, correct answer.');
 
 } else {
   alert('Are you confused? You have to say yes or no.');
@@ -92,11 +92,11 @@ sandwichFive.innerHTML = answerFive;
 
 if (answerFive === 'yes' || answerFive === 'y') {
   alert("A controversial answer, but the Geneva Convention of 2016 did declare that a hot dog is a sandwich - thus, your new space elevator is indeed a sandwich.");
-  console.log('yes');
+  console.log('Yes, correct answer.');
 
 } else if (answerFive === 'no' || answerFive === 'n') {
   alert('Come on now, everyone knows a hot dog is a sandwich - this is deeply controversial, I know.');
-  console.log('no');
+  console.log('No, incorrect answer.');
 
 } else {
   alert('I know, I think it\'s a dumb question too.');
