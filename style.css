@@ -1,20 +1,63 @@
 /* GENERAL */
+body {
+    background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Tea-Desktop-HD-Wallpapers.jpeg');
+    background-size: 100%;
+    background-repeat: no repeat;
+    background-position: center
+}
 
+p {
+    color: white;
+    font-family: Verdana;
+    margin: 5%;
+}
+
+/* playing with sample div code below to create box */
+div {
+    margin: 150px auto;
+    border: 1px solid white;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.85);
+    /* padding: 5%; */
+}
+
+ul {
+    color: white;
+    font-family: Verdana;
+}
 
 /* HEADERS */
-
 h1 {
-    color: red;
+    color: white;
+    text-align: center;
+    font-family: Verdana;
+    margin: 5%;
 }
 
 h2 {
-    color: blue;
+    color: lightcoral;
+    text-align: center;
+    font-family: cursive;
+    margin: 5%;
 }
 
 /* NAV */
-
-nav li {
-    color: purple;
+nav {
+    background-color: dimgrey;
+    color: white;
+    font-family: Verdana;
+    border-width: 0px 1px 0px 0px;
+    padding: 10px 17px 10px 12px;
 }
 
-/* BODY */
+nav li {
+    color: navajowhite;
+    display: inline-block;
+    text-align: center;
+    padding: 0% 3% 0% 3%;
+}
+
+/* the below doesn't work yet :(
+a.hover {
+    color: lightcoral;
+} */
