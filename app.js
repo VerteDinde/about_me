@@ -11,9 +11,10 @@ function qName() {
 // store user's name for printing onto HTML
   var userID = document.getElementById('userName');
   userID.innerHTML = userName;
+  return userName;
 }
 
-qName();
+var userName = qName();
 
 
 var rightAnswers = 0; // track user correct answers
@@ -179,42 +180,46 @@ function qAge() {
 
 qAge();
 
-// //Question 7: Can you guess an outdoor activity I like?
-// var activityArray = ['running', 'biking', 'hiking', 'camping'];
+function qActivity() {
+  //Question 7: Can you guess an outdoor activity I like?
+  var activityArray = ['running', 'biking', 'hiking', 'camping'];
 
-// // two for loops; one for user guesses and one for searching through the array
-// for (counter = 6; counter > 0; counter--) {
+  // two for loops; one for user guesses and one for searching through the array
+  for (var counter = 6; counter > 0; counter--) {
 
-//   var answerSeven = prompt('Can you guess an outdoor activity that I like? You have ' + counter + ' guesses left.').toLowerCase();
-//   console.log(answerSeven, typeof(answerSeven)); // debugging code
+    var answerSeven = prompt('Can you guess an outdoor activity that I like? You have ' + counter + ' guesses left.').toLowerCase();
+    console.log(answerSeven, typeof (answerSeven)); // debugging code
 
-//   for (var i = 0; i < activityArray.length; i++) { // loop sorts through array
-//     if (activityArray[i] === answerSeven) {
-//       alert('You guessed it! I like ' + answerSeven + '.');
-//       i = activityArray.length;
-//       rightAnswers++;
-//       counter = -1;
-//       console.log('Answer was in array. rightAnswer +1');
-//       break;
-//     } else if (activityArray[i] != answerSeven) {
-//       console.log('Answer was not in array.');
-//      // break;
-//     } else {
-//       counter--;
-//       alert('Guess again! You have ' + counter + 'tries left!');
-//       //break;
-//     }
-//   }
-//   if (counter > 0) {
-//     alert('Sorry, you didn\'t guess right. Guess again.');
-//   };
-// } //end main for loop
+    for (var i = 0; i < activityArray.length; i++) { // loop sorts through array
+      if (activityArray[i] === answerSeven) {
+        alert('You guessed it! I like ' + answerSeven + '.');
+        i = activityArray.length;
+        rightAnswers++;
+        counter = -1;
+        console.log('Answer was in array. rightAnswer +1');
+        break;
+      } else if (activityArray[i] != answerSeven) {
+        console.log('Answer was not in array.');
+        // break;
+      } else {
+        counter--;
+        alert('Guess again! You have ' + counter + 'tries left!');
+        //break;
+      }
+    }
+    if (counter > 0) {
+      alert('Sorry, you didn\'t guess right. Guess again.');
+    };
+  } //end main for loop
 
-// var outsideSeven = document.getElementById('answerSeven');
-// outsideSeven.innerHTML = answerSeven;
+  var outsideSeven = document.getElementById('answerSeven');
+  outsideSeven.innerHTML = answerSeven;
+}
 
-// // Final Answer Tally
-// alert('Congrats, ' + userName + '! You got ' + rightAnswers + ' out of 7!');
+qActivity();
 
-// var finalTally = document.getElementById('rightAnswers');
-// finalTally.innerHTML = rightAnswers;
+// Final Answer Tally
+alert('Congrats, ' + userName + '! You got ' + rightAnswers + ' out of 7!');
+
+var finalTally = document.getElementById('rightAnswers');
+finalTally.innerHTML = rightAnswers;
