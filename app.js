@@ -117,26 +117,30 @@ function qTall() {
 
 qTall();
 
-// // Question 5: if I assemble a space elevator out of one billion hotdogs on top of each other,
-// // is the resultant tower a sandwich? Yes.
-// var answerFive = prompt('If I assemble a space elevator out of 1 billion hotdogs stacked on top of each other, is the resulting tower a sandwich?', 'Yes or No').toLowerCase();
+function qHotdogs() {
+  // Question 5: if I assemble a space elevator out of one billion hotdogs on top of each other,
+  // is the resultant tower a sandwich? Yes.
+  var answerFive = prompt('If I assemble a space elevator out of 1 billion hotdogs stacked on top of each other, is the resulting tower a sandwich?', 'Yes or No').toLowerCase();
 
-// var sandwichFive = document.getElementById('answerFive');
-// sandwichFive.innerHTML = answerFive;
+  var sandwichFive = document.getElementById('answerFive');
+  sandwichFive.innerHTML = answerFive;
 
-// if (answerFive === 'yes' || answerFive === 'y') {
-//   alert('A controversial answer, but the Geneva Convention of 2016 did declare that a hot dog is a sandwich - thus, your new space elevator is indeed a sandwich.');
-//   rightAnswers++;
-//   console.log('Yes, correct answer. rightAnswer +1');
+  if (answerFive === 'yes' || answerFive === 'y') {
+    alert('A controversial answer, but the Geneva Convention of 2016 did declare that a hot dog is a sandwich - thus, your new space elevator is indeed a sandwich.');
+    rightAnswers++;
+    console.log('Yes, correct answer. rightAnswer +1');
 
-// } else if (answerFive === 'no' || answerFive === 'n') {
-//   alert('Come on now, everyone knows a hot dog is a sandwich.');
-//   console.log('No, incorrect answer.');
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    alert('Come on now, everyone knows a hot dog is a sandwich.');
+    console.log('No, incorrect answer.');
 
-// } else {
-//   alert('I know, I think it\'s a dumb question too.');
-//   console.log('other');
-// }
+  } else {
+    alert('I know, I think it\'s a dumb question too.');
+    console.log('other');
+  }
+}
+
+qHotdogs();
 
 // // Question 6: How old am I? 28, id=answerSix
 // // Need to give the user four opportunities, and tell them if they are too high or low
