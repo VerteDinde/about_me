@@ -14,7 +14,6 @@ userID.innerHTML = userName;
 
 var rightAnswers = 0; // track user correct answers
 
-/* DELETE THIS
 // design if-else loop for questions and answers; must be yes/y or no/n
 // Question 1: Is my name Keeley? Yes. id = nameOne
 var answerOne = prompt('Is my full name "Keeley"?', "Yes or No").toLowerCase();
@@ -85,7 +84,7 @@ var tallFour = document.getElementById('answerFour');
 tallFour.innerHTML = answerFour;
 
 if (answerFour === 'yes' || answerFour === 'y') {
-  alert('No, I\'m too short');
+  alert('No, I\'m too short.');
   console.log('Yes, incorrect answer.');
 
 } else if (answerFour === 'no' || answerFour === 'n') {
@@ -111,7 +110,7 @@ if (answerFive === 'yes' || answerFive === 'y') {
   console.log('Yes, correct answer. rightAnswer +1');
 
 } else if (answerFive === 'no' || answerFive === 'n') {
-  alert('Come on now, everyone knows a hot dog is a sandwich - this is deeply controversial, I know.');
+  alert('Come on now, everyone knows a hot dog is a sandwich.');
   console.log('No, incorrect answer.');
 
 } else {
@@ -119,16 +118,13 @@ if (answerFive === 'yes' || answerFive === 'y') {
   console.log('other');
 }
 
-DELETE THIS */
-
-
 //Question 6: How old am I? 28, id=answerSix
 // Need to give the user four opportunities, and tell them if they are too high or low
 var age = 28; //Set answer
 var counter = 5; //Start counter
 
 while (answerSix != age && counter > 0) {  //run loop while guess not equal to age AND counter is greater than 0
-  var answerSix = prompt('How old am I?');
+  var answerSix = prompt('How old am I? I\'ll give you 5 guesses. You have ' + counter ' left.');
   console.log(answerSix, typeof(answerSix));
 
   if (answerSix < age) {
@@ -160,7 +156,7 @@ var activityArray = ['running', 'biking', 'hiking', 'camping'];
 // two for loops; one for user guesses and one for searching through the array
 for (counter = 6; counter > 0; counter--) {
 
-  var answerSeven = prompt('Can you guess an outdoor activity that I like? You have ' + counter + ' guesses left.');
+  var answerSeven = prompt('Can you guess an outdoor activity that I like? You have ' + counter + ' guesses left.').toLowerCase();
   console.log(answerSeven, typeof(answerSeven)); // debugging code  
 
   for (var i = 0; i < activityArray.length; i++) { // loop sorts through array

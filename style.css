@@ -1,54 +1,105 @@
 /* GOOGLE FONT IMPORT */
 @import url('https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dawning+of+a+New+Day|Josefin+Sans');
 
 /* GENERAL */
 body {
-    /* background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Tea-Desktop-HD-Wallpapers.jpeg'); */
-    background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/wood/wood-002642-gray-black.jpg');
-    background-size: 100%;
-    background-repeat: no repeat;
-    background-position: center;
+    background-image: url('img/watercolor-backgrounds-10.jpg');
+    background-attachment: fixed;
 }
 
 p {
     color: white;
-    font-family: 'Fauna One', serif;
-    font-size: 16px;
-    line-height: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
     /* letter-spacing: 5px; */
-    margin: 5%;
+    margin: 2% 20%;
 }
 
 ul {
     color: white;
-    font-family: 'Fauna One', serif;
-    font-size: 16px;
-    line-height: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 2% 20%;
 }
 
 ol {
     color: white;
-    font-family: 'Fauna One', serif;
-    font-size: 16px;
-    line-height: 32px;
-    margin: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 2% 20%;
 }
 
 /* DIV BOXES */
 
 
-.movie-list {
-    margin: 150px auto;
+.pizza {
+    margin: 60px auto 150px auto;
     border: 1px solid white;
     width: 900px;
     background-color: rgba(0, 0, 0, 0.55);
     /* padding: 5%; */
 }
 
-/* Playing with columns
-Original code here: */
+/* HEADERS */
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    padding: 0 5%;
+    margin: 5% 15%
+}
 
-.columns {
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    margin: 5% 20% 1% 20%;
+}
+
+/* NAV */
+nav {
+    color: white;
+    font-family: 'Dawning of a New Day', cursive;
+    width: 100%;
+    text-align: center;
+}
+
+nav li {
+    color: white;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 30px;
+    display: inline-block; /* lines up nav links on one row */
+    text-align: center;
+    padding: 0% 3% 0% 3%;
+}
+
+/* LINKS */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: dimgrey;
+}
+
+/* Playing with columns
+Can't get them to work, so commenting out for now. */
+
+/* .columns {
     width: 100%;
     display: block;
     margin: 5%
@@ -59,10 +110,10 @@ Original code here: */
     border: 1px solid white;
     width: 900px;
     background-color: rgba(0, 0, 0, 0.85);
-    /* padding: 5%; */
-}
+    /* padding: 5%;
+} 
 
-.first-column {   /* bio and goals */
+.first-column {   /* bio and goals 
     display: inline-block;
     max-width: 40%;
     margin: 3%;
@@ -70,50 +121,10 @@ Original code here: */
     border: 1px solid white;
 }
 
-.second-column {   /* resume and education */
+.second-column {   /* 
     display: inline-block;
     max-width: 40%;
     padding: 10px;
     margin: 3%;
     border: 1px solid white;
-}
-
-
-/* HEADERS */
-h1 {
-    color: white;
-    text-align: left;
-    font-family: 'Playfair Display', serif;
-    font-size: 70px;
-    padding: 0 5%;
-}
-
-h2 {
-    color: lightcoral;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    margin: 5%;
-}
-
-/* NAV */
-nav {
-    background-color: rgba(0, 0, 0, 0.85);
-    color: white;
-    font-family: 'Fauna One', serif;
-    border-width: 0px 1px 0px 0px;
-    padding: 10px 17px 10px 12px;
-}
-
-nav li {
-    color: white;
-    font-family: 'Fauna One', serif;
-    display: inline-block;
-    text-align: center;
-    padding: 0% 3% 0% 3%;
-}
-
-/* the below doesn't work yet :(
-a.hover {
-    color: lightcoral;
 } */
