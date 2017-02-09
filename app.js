@@ -93,25 +93,29 @@ function qPiano() {
 
 qPiano();
 
-// // Question 4: Am I tall enough to ride most roller coasters? No. answerFour
-// var answerFour = prompt ('Am I tall enough to ride most rollercoasters?').toLowerCase();
+function qTall() {
+  // Question 4: Am I tall enough to ride most roller coasters? No. answerFour
+  var answerFour = prompt('Am I tall enough to ride most rollercoasters?').toLowerCase();
 
-// var tallFour = document.getElementById('answerFour');
-// tallFour.innerHTML = answerFour;
+  var tallFour = document.getElementById('answerFour');
+  tallFour.innerHTML = answerFour;
 
-// if (answerFour === 'yes' || answerFour === 'y') {
-//   alert('No, I\'m too short.');
-//   console.log('Yes, incorrect answer.');
+  if (answerFour === 'yes' || answerFour === 'y') {
+    alert('No, I\'m too short.');
+    console.log('Yes, incorrect answer.');
 
-// } else if (answerFour === 'no' || answerFour === 'n') {
-//   alert('I am not tall enough, it\'s true.');
-//   rightAnswers++;
-//   console.log('No, correct answer. rightAnswers +1');
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    alert('I am not tall enough, it\'s true.');
+    rightAnswers++;
+    console.log('No, correct answer. rightAnswers +1');
 
-// } else {
-//   alert('Are you confused? You have to say yes or no.');
-//   console.log('other');
-// }
+  } else {
+    alert('Are you confused? You have to say yes or no.');
+    console.log('other');
+  }
+}
+
+qTall();
 
 // // Question 5: if I assemble a space elevator out of one billion hotdogs on top of each other,
 // // is the resultant tower a sandwich? Yes.
