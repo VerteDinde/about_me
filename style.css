@@ -1,19 +1,60 @@
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display');
+
 /* GENERAL */
 body {
-    background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Tea-Desktop-HD-Wallpapers.jpeg');
+    /* background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Tea-Desktop-HD-Wallpapers.jpeg'); */
+    background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/wood/wood-002642-gray-black.jpg');
     background-size: 100%;
     background-repeat: no repeat;
-    background-position: center
+    background-position: center;
 }
 
 p {
     color: white;
-    font-family: Verdana;
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    line-height: 32px;
+    /* letter-spacing: 5px; */
     margin: 5%;
 }
 
-/* playing with sample div code below to create box */
-div {
+ul {
+    color: white;
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+ol {
+    color: white;
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 5%;
+}
+
+/* DIV BOXES */
+
+
+.movie-list {
+    margin: 150px auto;
+    border: 1px solid white;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.55);
+    /* padding: 5%; */
+}
+
+/* Playing with columns
+Original code here: */
+
+.columns {
+    width: 100%;
+    display: block;
+    margin: 5%
+}
+
+.guessing-game {
     margin: 150px auto;
     border: 1px solid white;
     width: 900px;
@@ -21,37 +62,52 @@ div {
     /* padding: 5%; */
 }
 
-ul {
-    color: white;
-    font-family: Verdana;
+.first-column {   /* bio and goals */
+    display: inline-block;
+    max-width: 40%;
+    margin: 3%;
+    padding: 10px;
+    border: 1px solid white;
 }
+
+.second-column {   /* resume and education */
+    display: inline-block;
+    max-width: 40%;
+    padding: 10px;
+    margin: 3%;
+    border: 1px solid white;
+}
+
 
 /* HEADERS */
 h1 {
     color: white;
-    text-align: center;
-    font-family: Verdana;
-    margin: 5%;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    padding: 0 5%;
 }
 
 h2 {
     color: lightcoral;
     text-align: center;
-    font-family: cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
     margin: 5%;
 }
 
 /* NAV */
 nav {
-    background-color: dimgrey;
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
-    font-family: Verdana;
+    font-family: 'Fauna One', serif;
     border-width: 0px 1px 0px 0px;
     padding: 10px 17px 10px 12px;
 }
 
 nav li {
-    color: navajowhite;
+    color: white;
+    font-family: 'Fauna One', serif;
     display: inline-block;
     text-align: center;
     padding: 0% 3% 0% 3%;
