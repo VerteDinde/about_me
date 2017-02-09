@@ -118,14 +118,15 @@ if (answerFive === 'yes' || answerFive === 'y') {
   console.log('other');
 }
 
-//Question 6: How old am I? 28, id=answerSix
+// Question 6: How old am I? 28, id=answerSix
 // Need to give the user four opportunities, and tell them if they are too high or low
+// Thanks Tom for debugging help!
 var age = 28; //Set answer
 var counter = 5; //Start counter
 
-while (answerSix != age && counter > 0) {  //run loop while guess not equal to age AND counter is greater than 0
+while (Number(answerSix) != age && counter > 0) {  //run loop while guess not equal to age AND counter is greater than 0
   var answerSix = prompt('How old am I? I\'ll give you 5 guesses. You have ' + counter + ' left.');
-  console.log(answerSix, typeof(answerSix));
+  console.log(answerSix, typeof answerSix ); //parathesis around typeof aren't necessary
 
   if (answerSix < age) {
     alert('Guess higher! You have ' + counter + ' more tries.');
@@ -185,7 +186,6 @@ var outsideSeven = document.getElementById('answerSeven');
 outsideSeven.innerHTML = answerSeven;
 
 // Final Answer Tally
-
 alert('Congrats, ' + userName + '! You got ' + rightAnswers + ' out of 7!');
 
 var finalTally = document.getElementById('rightAnswers');
