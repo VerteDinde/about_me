@@ -4,7 +4,7 @@
 
 
 
-function qOne() {
+function qName() {
 // Ask for user's name
   var userName = prompt('What\'s your name?');
   alert(userName + ', nice to meet you.');
@@ -13,14 +13,14 @@ function qOne() {
   userID.innerHTML = userName;
 }
 
-qOne();
+qName();
 
 
 var rightAnswers = 0; // track user correct answers
 
 // design if-else loop for questions and answers; must be yes/y or no/n
 // Question 1: Is my name Keeley? Yes. id = nameOne
-function qTwo() {
+function qKeeley() {
   var answerOne = prompt('Is my full name "Keeley"?', 'Yes or No').toLowerCase();
 
 // Experimenting with code from Yuval:
@@ -43,27 +43,31 @@ function qTwo() {
   }
 }
 
-qTwo();
+qKeeley();
 
-// Question 2: Is my favorite breakfast food pancakes? No. id = foodTwo.
-// var answerTwo = prompt('Is my favorite breakfast food pancakes?', 'Yes or No').toLowerCase();
+function qBreakfast() {
+  //Question 2: Is my favorite breakfast food pancakes? No. id = foodTwo.
+  var answerTwo = prompt('Is my favorite breakfast food pancakes?', 'Yes or No').toLowerCase();
 
-// var foodTwo = document.getElementById('answerTwo');
-// foodTwo.innerHTML = answerTwo;
+  var foodTwo = document.getElementById('answerTwo');
+  foodTwo.innerHTML = answerTwo;
 
-// if (answerTwo === 'yes' || answerTwo === 'y') {
-//   alert('No, I actually love cereal. Pancakes are amazing, though.');
-//   console.log('Yes, incorrect answer.');
+  if (answerTwo === 'yes' || answerTwo === 'y') {
+    alert('No, I actually love cereal. Pancakes are amazing, though.');
+    console.log('Yes, incorrect answer.');
 
-// } else if (answerTwo === 'no' || answerTwo === 'n') {
-//   alert('Good guess, my favorite breakfast food is actually cereal.');
-//   rightAnswers++;
-//   console.log('No, correct answer. rightAnswer +1.');
+  } else if (answerTwo === 'no' || answerTwo === 'n') {
+    alert('Good guess, my favorite breakfast food is actually cereal.');
+    rightAnswers++;
+    console.log('No, correct answer. rightAnswer +1.');
 
-// } else {
-//   alert('Are you confused? Yes or no.');
-//   console.log('other');
-// }
+  } else {
+    alert('Are you confused? Yes or no.');
+    console.log('other');
+  }
+}
+
+qBreakfast();
 
 // // Question 3: Can I play the piano? Yes.
 // var answerThree = prompt('Can I play the piano?', 'Yes or No').toLowerCase();
