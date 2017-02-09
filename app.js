@@ -142,38 +142,42 @@ function qHotdogs() {
 
 qHotdogs();
 
-// // Question 6: How old am I? 28, id=answerSix
-// // Need to give the user four opportunities, and tell them if they are too high or low
-// // Thanks Tom for debugging help!
-// var age = 28; //Set answer
-// var counter = 5; //Start counter
+function qAge() {
+  // Question 6: How old am I? 28, id=answerSix
+  // Need to give the user four opportunities, and tell them if they are too high or low
+  // Thanks Tom for debugging help!
+  var age = 28; //Set answer
+  var counter = 5; //Start counter
 
-// while (Number(answerSix) != age && counter > 0) {  //run loop while guess not equal to age AND counter is greater than 0
-//   var answerSix = prompt('How old am I? I\'ll give you 5 guesses. You have ' + counter + ' left.');
-//   console.log(answerSix, typeof answerSix ); //parathesis around typeof aren't necessary
+  while (Number(answerSix) != age && counter > 0) {  //run loop while guess not equal to age AND counter is greater than 0
+    var answerSix = prompt('How old am I? I\'ll give you 5 guesses. You have ' + counter + ' left.');
+    console.log(answerSix, typeof answerSix); //parathesis around typeof aren't necessary
 
-//   if (answerSix < age) {
-//     alert('Guess higher! You have ' + counter + ' more tries.');
-//     counter--;
-//     console.log('User guessed too low. ' + counter + ' more tries.');
-//   } else if (answerSix > age) {
-//     alert('Guess lower! You have ' + counter + ' more tries.');
-//     counter--;
-//     console.log('User guessed too high. ' + counter + ' more tries.');
-//   } else if (counter === 0) {
-//     alert('Sorry, you ran out of tries!');
-//   }
-// }
+    if (answerSix < age) {
+      alert('Guess higher! You have ' + counter + ' more tries.');
+      counter--;
+      console.log('User guessed too low. ' + counter + ' more tries.');
+    } else if (answerSix > age) {
+      alert('Guess lower! You have ' + counter + ' more tries.');
+      counter--;
+      console.log('User guessed too high. ' + counter + ' more tries.');
+    } else if (counter === 0) {
+      alert('Sorry, you ran out of tries!');
+    }
+  }
 
-// if (answerSix == age) {
-//   alert('Yep, I\'m ' + age + '!');
-//   rightAnswers++;
-//   counter = -1;
-//   console.log('User guessed correct age (28). rightAnswer +1');
-// }
+  if (answerSix == age) {
+    alert('Yep, I\'m ' + age + '!');
+    rightAnswers++;
+    counter = -1;
+    console.log('User guessed correct age (28). rightAnswer +1');
+  }
 
-// var ageSix = document.getElementById('answerSix');
-// ageSix.innerHTML = answerSix;
+  var ageSix = document.getElementById('answerSix');
+  ageSix.innerHTML = answerSix;
+}
+
+qAge();
 
 // //Question 7: Can you guess an outdoor activity I like?
 // var activityArray = ['running', 'biking', 'hiking', 'camping'];
