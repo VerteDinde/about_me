@@ -5,41 +5,82 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class=center-box>
-    
     <header>
+        <h1><strong>Hello!</strong> I'm Keeley Hammond and I'm (going to be) a fullstack web developer.</h1>
         <nav>
             <ul>
                 <!-- links currently all local, except learning journal goes to GitHub -->
                 <li><a href-"index.html">About Me</a></li>
-                <li><a href="tea.html">About Tea</a></li>
-                <li><a href="learning.html">Learning Journal</a></li>
+                <li><a href="guessing_game.html">Guessing Game</a></li>
+                <li><a href="https://github.com/VerteDinde/201-Learning-Journal">Learning Journal</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <section>
-        <h1>About Me</h1>
-        <p>Hey, welcome to my site. I'm sure a good looking person like yourself has a lot to do today, 
-            but why not take a moment and play a guessing game?</p>
-        <article>
-            <h2>Guessing Game</h2>
-            <!-- experimented with span and getElementById here; comments welcome, Tim and Aaron! -->
-            <p>1. Is my full name Keeley? <span id="answerOne"></span></p>
-            
-            <p>2. Is my favorite breakfast food pancakes? <span id="answerTwo"></span></p>
-            
-            <p>3. Can I play the piano? <span id="answerThree"></span></p>
-            
-            <p>4. Am I tall enough to ride most rollercoasters? <span id="answerFour"></span></p>
-            
-            <p>5. If I assemble a space elevator out of one billion hotdogs on top of each other, 
-is the resultant tower a sandwich? <span id="answerFive"></span></p>
-       
-        </article>
+    <h3>(Click "Guessing Game" above to begin the guessing game.)</h3>
+    <div class="reg-columns">
+        <!-- bio div -->
+        <div class="bio">
+            <h2>Bio</h2>
+            <p>I currently live in Portland, Oregon, but am originally from Olathe, Kansas. I love design, reading about tech news, baking muffins and long distance running. I also love listening to podcasts about American history - my current favorite podcast is "Pod Save America."</p>
+        </div class="bio">
+
+        <!-- education div -->
+        <div class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Rochester Institute of Technology</li>
+                <li>BA, Film and Animation</li>
+                <li>RIT Presidential Scholarship</li>
+            </ul>
+        </div class="education">
+
+        <!-- resume div -->
+        <div class="resume">
+            <h2>Resume</h2>
+            <ul>
+                <li>Think Shift (<em>Group Account Director</em>)</li>
+                <li>Women Who Code Portland (<em>Community Lead</em>)</li>
+            </ul>
+        </div class="resume">
+
+        <!-- goals div -->
+        <div class="goals">
+            <h2>Goals</h2>
+            <p>My goal is to get a job as a junior or entry-level developer at a software company. To get there, I'd like to complete the following:</p>
+            <ul>
+                <li>Work on at least 3 projects using Javascript. (To measure learning of new technologies)</li>
+                <li>Achieve a score of at least 95% in Code 201.</li>
+                <li>Participate in code reviews once a week.</li>
+                <li>Write at least 3 software design documents for non-trivial applications (to measure written communication skills)</li>
+                <li>Deliver at least 5 projects of medium size or above this year</li>
+            </ul>
+        </div class="goals">
+
+    </div class="reg-columns"> 
+
+    <!-- list of pizza toppings div -->
+     <div class="pizza">
+        <h2>Favorite Pizza Toppings</h2>
+        <p>Below is a list of my favorite pizza toppings:</p>
+        <ol>
+            <li>Pineapple (<em>fight me irl</em>)</li>
+            <li>Canadian Bacon</li>
+            <li>Olives</li>
+            <li>Green Peppers</li>
+            <li>Sausage</li>
+            <li>Pepperoni</li>
+            <li>Mushrooms</li>
+            <li>Extra Cheese</li>
+            <li>Basil</li>
+            <li>Pesto Sauce</li>
+        </ol>
+        <p></p>
+    </div class="pizza">
+
     </section>
     <!-- put script at the end of the body -->
-    </div class="center-box">
-    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
 </body>
 </html>

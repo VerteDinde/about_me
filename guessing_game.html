@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1><strong>Hello!</strong> I'm Keeley Hammond and I'm (going to be) a fullstack web developer.</h1>
+        <nav>
+            <ul>
+                <!-- links currently all local, except learning journal goes to GitHub -->
+                <li><a href-"index.html">About Me</a></li>
+                <li><a href="guessing_game.html">Guessing Game</a></li>
+                <li><a href="https://github.com/VerteDinde/201-Learning-Journal">Learning Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- guessing game div -->
+    <div class="guessing-game">
+    <section>
+        <article>
+            <h2>Guessing Game</h2>
+            <!-- experimented with span and getElementById here; comments welcome, Tim and Aaron! -->
+            <p>Congrats, <span id="userName"></span>! You got <span id="rightAnswers"></span> out of 7!</p>
+            
+            <p>1. Is my full name Keeley? You said: <span id="answerOne"></span></p>
+            <p>2. Is my favorite breakfast food pancakes? You said: <span id="answerTwo"></span></p>
+            <p>3. Can I play the piano? You said: <span id="answerThree"></span></p>
+            <p>4. Am I tall enough to ride most rollercoasters? You said: <span id="answerFour"></span></p>
+            <p>5. If I assemble a space elevator out of one billion hotdogs on top of each other, 
+is the resultant tower a sandwich? You said: <span id="answerFive"></span></p>
+            <p>6. How old am I? You said: <span id="answerSix"></span></p>
+            <p>7. Can you guess an outdoor activity that I like? You said: <span id="answerSeven"></span></p>
+            <p></p>
+       
+        </article>
+    </section>
+    </div class="guessing-game">
+
+    <!-- put script at the end of the body -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,63 +1,140 @@
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Dawning+of+a+New+Day|Josefin+Sans');
+
 /* GENERAL */
 body {
-    background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Tea-Desktop-HD-Wallpapers.jpeg');
-    background-size: 100%;
-    background-repeat: no repeat;
-    background-position: center
+    background-image: url('img/watercolor-backgrounds-10.jpg');
+    background-attachment: fixed;
 }
 
 p {
     color: white;
-    font-family: Verdana;
-    margin: 5%;
-}
-
-/* playing with sample div code below to create box */
-div {
-    margin: 150px auto;
-    border: 1px solid white;
-    width: 900px;
-    background-color: rgba(0, 0, 0, 0.85);
-    /* padding: 5%; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 2% 20%;
 }
 
 ul {
     color: white;
-    font-family: Verdana;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 2% 20%;
+}
+
+ol {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 2% 20%;
+}
+
+/* DIV BOXES */
+
+
+.pizza {
+    margin: 60px auto 150px auto;
+    border: 1px solid white;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 0% 0% 3% 0%;
 }
 
 /* HEADERS */
 h1 {
     color: white;
     text-align: center;
-    font-family: Verdana;
-    margin: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    padding: 0 5%;
+    margin: 5% 15%
 }
 
 h2 {
-    color: lightcoral;
+    color: white;
     text-align: center;
-    font-family: cursive;
-    margin: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    margin: 5% 20% 1% 20%;
 }
+
+h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 5% 20% 1% 20%;
+}
+
 
 /* NAV */
 nav {
-    background-color: dimgrey;
     color: white;
-    font-family: Verdana;
-    border-width: 0px 1px 0px 0px;
-    padding: 10px 17px 10px 12px;
+    font-family: 'Dawning of a New Day', cursive;
+    width: 100%;
+    text-align: center;
 }
 
 nav li {
-    color: navajowhite;
-    display: inline-block;
+    color: white;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 30px;
+    display: inline-block; /* lines up nav links on one row */
     text-align: center;
     padding: 0% 3% 0% 3%;
 }
 
-/* the below doesn't work yet :(
-a.hover {
-    color: lightcoral;
+/* LINKS */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: dimgrey;
+}
+
+/* Playing with columns
+Can't get them to work, so commenting out for now. */
+
+/* .columns {
+    width: 100%;
+    display: block;
+    margin: 5%
+}
+
+.guessing-game {
+    margin: 150px auto;
+    border: 1px solid white;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.85);
+    /* padding: 5%;
+} 
+
+.first-column {   /* bio and goals 
+    display: inline-block;
+    max-width: 40%;
+    margin: 3%;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.second-column {   /* 
+    display: inline-block;
+    max-width: 40%;
+    padding: 10px;
+    margin: 3%;
+    border: 1px solid white;
 } */
