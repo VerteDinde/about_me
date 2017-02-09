@@ -5,26 +5,26 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class=center-box>
-    
     <header>
         <nav>
             <ul>
                 <!-- links currently all local, except learning journal goes to GitHub -->
                 <li><a href-"index.html">About Me</a></li>
                 <li><a href="tea.html">About Tea</a></li>
-                <li><a href="learning.html">Learning Journal</a></li>
+                <li><a href="https://github.com/VerteDinde/201-Learning-Journal">Learning Journal</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <!-- guessing game div -->
+    <div class=center-box>
     <section>
-        <h1>About Me</h1>
-        <p>Hey, welcome to my site. I'm sure a good looking person like yourself has a lot to do today, 
-            but why not take a moment and play a guessing game?</p>
+        <h1>Keeley Hammond</h1>
         <article>
             <h2>Guessing Game</h2>
             <!-- experimented with span and getElementById here; comments welcome, Tim and Aaron! -->
+            <p>Congrats, <span id="userName"></span>! You got <span id="rightAnswers"></span> out of 7!</p>
+            
             <p>1. Is my full name Keeley? <span id="answerOne"></span></p>
             
             <p>2. Is my favorite breakfast food pancakes? <span id="answerTwo"></span></p>
@@ -35,11 +35,29 @@
             
             <p>5. If I assemble a space elevator out of one billion hotdogs on top of each other, 
 is the resultant tower a sandwich? <span id="answerFive"></span></p>
+
+            <p>6. How old am I? <span id="answerSix"></span></p>
+
+            <p>7. Can you guess an outdoor activity that I like? <span id="answerSeven"></span></p>
        
         </article>
     </section>
-    <!-- put script at the end of the body -->
     </div class="center-box">
+
+    <!-- list of favorite movies div -->
+    <div class="movie-list">
+        <h2>Favorite Movies</h2>
+        <p>Below is a list of my favorite films.</p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+    </div class="movie-list">
+
+    <!-- put script at the end of the body -->
     <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
