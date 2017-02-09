@@ -124,7 +124,7 @@ var age = 28; //Set answer
 var counter = 5; //Start counter
 
 while (answerSix != age && counter > 0) {  //run loop while guess not equal to age AND counter is greater than 0
-  var answerSix = prompt('How old am I? I\'ll give you 5 guesses. You have ' + counter ' left.');
+  var answerSix = prompt('How old am I? I\'ll give you 5 guesses. You have ' + counter + ' left.');
   console.log(answerSix, typeof(answerSix));
 
   if (answerSix < age) {
