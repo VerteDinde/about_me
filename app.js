@@ -69,25 +69,29 @@ function qBreakfast() {
 
 qBreakfast();
 
-// // Question 3: Can I play the piano? Yes.
-// var answerThree = prompt('Can I play the piano?', 'Yes or No').toLowerCase();
+function qPiano() {
+// Question 3: Can I play the piano? Yes.
+  var answerThree = prompt('Can I play the piano?', 'Yes or No').toLowerCase();
 
-// var pianoThree = document.getElementById('answerThree');
-// pianoThree.innerHTML = answerThree;
+  var pianoThree = document.getElementById('answerThree');
+  pianoThree.innerHTML = answerThree;
 
-// if (answerThree === 'yes' || answerThree === 'y') {
-//   alert('I can play the piano!');
-//   rightAnswers++;
-//   console.log('Yes, correct answer. rightAnswer +1.');
+  if (answerThree === 'yes' || answerThree === 'y') {
+    alert('I can play the piano!');
+    rightAnswers++;
+    console.log('Yes, correct answer. rightAnswer +1.');
 
-// } else if (answerThree === 'no' || answerThree === 'n') {
-//   alert('Nope, sorry, I actually can play the piano.');
-//   console.log('No, incorrect answer.');
+  } else if (answerThree === 'no' || answerThree === 'n') {
+    alert('Nope, sorry, I actually can play the piano.');
+    console.log('No, incorrect answer.');
 
-// } else {
-//   alert('Are you confused? This is a yes or no, check your spelling.');
-//   console.log('other');
-// }
+  } else {
+    alert('Are you confused? This is a yes or no, check your spelling.');
+    console.log('other');
+  }
+}
+
+qPiano();
 
 // // Question 4: Am I tall enough to ride most roller coasters? No. answerFour
 // var answerFour = prompt ('Am I tall enough to ride most rollercoasters?').toLowerCase();
