@@ -40,7 +40,7 @@ ol {
     border: 1px solid white;
     width: 900px;
     background-color: rgba(0, 0, 0, 0.55);
-    /* padding: 5%; */
+    padding: 0% 0% 3% 0%;
 }
 
 /* HEADERS */
