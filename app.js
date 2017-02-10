@@ -1,16 +1,15 @@
-// esLinter is loaded locally
 // begin with 'use strict'
 'use strict';
-
-
 
 function qName() {
 // Ask for user's name
   var userName = prompt('What\'s your name?');
   alert(userName + ', nice to meet you.');
+
 // store user's name for printing onto HTML
   var userID = document.getElementById('userName');
   userID.innerHTML = userName;
+
   return userName;
 }
 
